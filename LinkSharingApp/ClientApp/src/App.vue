@@ -22,10 +22,13 @@
   <ButtonTab :radio-group="'g'" :unique-id="'button'" @tab-click-ev="() => {}"></ButtonTab>
   <ButtonTab :radio-group="'g'" :unique-id="'button'" @tab-click-ev="() => {}"></ButtonTab>
   <ButtonTab :radio-group="'g'" :unique-id="'button'" @tab-click-ev="() => {}"></ButtonTab>
+
+  <TextField></TextField>
 </template>
 
 <script setup lang="ts">
 import ButtonTab from './components/Buttons/ButtonTab.vue';
+import TextField from './components/Inputs/TextField.vue';
 
 // import { ref } from "vue";
 

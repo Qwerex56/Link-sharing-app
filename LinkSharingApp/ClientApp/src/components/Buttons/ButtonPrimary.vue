@@ -13,11 +13,11 @@
 
 <script setup lang="ts">
 const emit = defineEmits<{
-  (e: 'submit'): void
+  (e: 'submitAction'): void
 }>();
 
 const emitSubmit = () => {
-  emit('submit');
+  emit('submitAction');
 } 
 
 </script>

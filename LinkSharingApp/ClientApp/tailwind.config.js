@@ -6,6 +6,7 @@ export default {
       white: '#FFFFFF',
       red: '#FF3939',
       borders: '#D9D9D9',
+      transparent: '#00000000',
       purple: {
         DEFAULT: '#633CFF',
         hover: '#BEADFF',

@@ -8,99 +8,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bcdd35e-af6d-47c7-bda6-3f7673deed0b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.LinkSharingApp/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/.storybook/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/.storybook/preview.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/cypress.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/cypress/fixtures/example.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/cypress/support/commands.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/cypress/support/e2e.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/public/Favicon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/public/vite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/router/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-arrow-right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-changes-saved.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-chevron-down.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-codepen.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-codewars.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-devto.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-drag-and-drop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-email.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-freecodecamp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-frontend-mentor.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-github.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-gitlab.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-hashnode.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-link-copied-to-clipboard.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-link.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-linkedin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-links-header.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-password.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-preview-header.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-profile-details-header.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-stack-overflow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-twitch.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-upload-image.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Icons/icon-youtube.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Illustrations/illustration-empty.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Illustrations/illustration-phone-mockup.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Logos/logo-devlinks-large.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/Logos/logo-devlinks-small.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/assets/vue.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/Button.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/Button.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/Configure.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/Header.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/Header.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/Page.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/Page.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/accessibility.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/accessibility.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/addon-library.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/assets.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/context.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/discord.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/docs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/figma-plugin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/github.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/share.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/styling.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/testing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/theming.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/tutorials.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/youtube.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/page.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/vite-env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/tsconfig.node.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/vite.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/Controllers/HelloController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/LinkSharingApp.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/LinkSharingApp.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/Pages/Error.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/Pages/Error.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/Pages/_ViewImports.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkSharingApp/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/components/Buttons/ButtonLink.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/components/Buttons/ButtonPrimary.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/components/Buttons/ButtonSecondary.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/components/Buttons/ButtonTab.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/components/Inputs/TextField.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/components/Buttons/ButtonPrimary.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/components/Buttons/ButtonSecondary.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LinkSharingApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LinkSharingApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/Button.stories.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/Button.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/Configure.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/Header.stories.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/Header.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/Page.stories.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/Page.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/accessibility.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/accessibility.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/addon-library.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/assets.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/context.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/discord.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/docs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/figma-plugin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/styling.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/testing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/theming.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/tutorials.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/assets/youtube.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/src/stories/page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/ClientApp/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LinkSharingApp/ClientApp/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkSharingApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LinkSharingApp/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +63,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///home/adrianczubaty/Documents/DotnetDev/Rider/LinkSharingApp/LinkSharingApp/Controllers/HelloController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/adrianczubaty/Documents/DotnetDev/Rider/LinkSharingApp/LinkSharingApp/Pages/Error.cshtml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/adrianczubaty/Documents/DotnetDev/Rider/LinkSharingApp/LinkSharingApp/Program.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2TePM1JQ5ZV23pRSrYl77EMNJYG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -125,32 +77,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/adrianczubaty/Documents/DotnetDev/Rider/LinkSharingApp/LinkSharingApp/ClientApp/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "ts.external.directory.path": "/home/adrianczubaty/Documents/DotnetDev/Rider/LinkSharingApp/LinkSharingApp/ClientApp/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/home/adrianczubaty/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
-      &quot;/home/adrianczubaty/.config/JetBrains/Rider2023.1/resharper-host/SourcesCache&quot;,
-      &quot;/home/adrianczubaty/.local/share/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/home/adrianczubaty/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
+      "/home/adrianczubaty/.config/JetBrains/Rider2023.1/resharper-host/SourcesCache",
+      "/home/adrianczubaty/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="LinkSharingApp" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/LinkSharingApp/LinkSharingApp.csproj" />
@@ -178,14 +129,51 @@
       <updated>1691400522802</updated>
       <workItem from="1691400524896" duration="4925000" />
       <workItem from="1691408876792" duration="1515000" />
+      <workItem from="1692638061317" duration="2422000" />
+      <workItem from="1692806298075" duration="1821000" />
     </task>
+    <task id="LOCAL-00001" summary="Init fix">
+      <option name="closed" value="true" />
+      <created>1692638746913</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692638746913</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Init fix #2">
+      <option name="closed" value="true" />
+      <created>1692638766511</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692638766511</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Init fix #2">
+      <option name="closed" value="true" />
+      <created>1692638834826</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692638834826</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="additionalRoots">
+      <list>
+        <option value="$PROJECT_DIR$/LinkSharingApp/ClientApp/src" />
+      </list>
+    </option>
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Init fix" />
+    <MESSAGE value="Push" />
+    <MESSAGE value="Init fix #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init fix #2" />
   </component>
 </project>

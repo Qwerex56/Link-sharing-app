@@ -18,6 +18,6 @@ const emit = defineEmits<{
 
 const emitSubmit = () => {
   emit('submitAction');
-} 
+}
 
 </script>

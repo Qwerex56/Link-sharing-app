@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row relative">
-    <img :src="props.inputIcon" alt="" class="absolute w-4 h-4 -translate-x-1/2 -translate-y-1/2 top-1/2 left-6">
+    <MultiIcon :icon-fa="['fas', 'link']" class="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-6"/>
     <input :type="props.inputType" :placeholder="props.placeHldr" @submit="emitSubmitValidation()" 
       class="peer appearance-none outline-none w-full h-full px-4 py-3 border rounded-lg border-borders indent-[calc(2.75rem-1rem)]
            focus:border-purple focus:shadow-purple invalid:border-red">
@@ -11,6 +11,8 @@
 </template>
 
 <script setup lang="ts">
+import MultiIcon from '../utilities/MultiIcon.vue';
+
 const props = defineProps({
   inputType: {
     type: String,

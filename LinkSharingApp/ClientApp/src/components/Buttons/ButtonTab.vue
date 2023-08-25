@@ -5,9 +5,9 @@
       type="radio" :name="props.radioGroup" :id="props.uniqueId" 
       class="peer appearance-none w-full bg-[transparent] h-[2.875rem] checked:bg-purple-hover"
       @click="emitClickEvent()">
-    <label :for="props.uniqueId" class="absolute flex flex-row gap-2 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 peer-checked:text-purple">
-      <img :src="props.btnIcon" alt="Tab" 
-        class="w-5">
+    <label :for="props.uniqueId" 
+      class="absolute flex flex-row gap-2 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 peer-checked:text-purple group-hover:text-purple">
+      <MultiIcon :icon-fa="props.btnIcon" />
       <slot>
         Tab Name
       </slot>
@@ -16,6 +16,8 @@
 </template>
 
 <script setup lang="ts">
+import MultiIcon from '../utilities/MultiIcon.vue';
+
 const props = defineProps({
   radioGroup: {
     type: String,
@@ -26,10 +28,9 @@ const props = defineProps({
     required: true,
   },
   btnIcon: {
-    type: String,
+    type: Array<string>,
     required: false,
-    default: 'src/assets/Icons/icon-link.svg',
-  }
+  },
 });
 
 const emits = defineEmits<{

@@ -4,12 +4,13 @@
     <slot>
       SiteName
     </slot>
-    <img src="src/assets/Icons/icon-arrow-right.svg" alt="Go"
-      class="self-end w-4">
+    <FontAwesomeIcon :icon="['fas', 'arrow-right']"></FontAwesomeIcon>
   </a>
 </template>
 
 <script setup lang="ts">
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
 const props = defineProps({
   siteLink: {
     type: String,

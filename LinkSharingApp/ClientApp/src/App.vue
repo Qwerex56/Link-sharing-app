@@ -24,11 +24,14 @@
   <ButtonTab :radio-group="'g'" :unique-id="'button'" @tab-click-ev="() => {}"></ButtonTab>
 
   <TextField></TextField>
+
+  <DropMenu></DropMenu>
 </template>
 
 <script setup lang="ts">
 import ButtonTab from './components/Buttons/ButtonTab.vue';
 import TextField from './components/Inputs/TextField.vue';
+import DropMenu from './components/Inputs/DropMenu.vue';
 
 // import { ref } from "vue";
 

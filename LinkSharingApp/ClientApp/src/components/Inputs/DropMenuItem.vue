@@ -1,10 +1,7 @@
 <template>
   <li class="flex flex-row w-full gap-3">
-    <MultiIcon :icon-img="props.itemLogo"/>
-    <p class="peer">
+    <MultiIcon :icon-fa="props.itemLogo" class="self-center" />
       <slot>Item name</slot>
-      <span class="peer hidden">(Selected)</span>
-    </p>
   </li>
 </template>
 
@@ -13,7 +10,7 @@ import MultiIcon from '../utilities/MultiIcon.vue';
 
 const props = defineProps({
   itemLogo: {
-    type: String,
+    type: Array<string>,
     required: false,
   },
 });

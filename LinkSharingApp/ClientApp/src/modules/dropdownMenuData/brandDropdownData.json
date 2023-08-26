@@ -1,0 +1,46 @@
+[
+  {
+    "icon": ["fab", "codepen"],
+    "brandName": "Codepen" 
+  },
+  {
+    "icon": ["fab", "facebook"],
+    "brandName": "Facebook"
+  },
+  {
+    "icon": ["fab", "free-code-camp"],
+    "brandName": "FreeCodeCamp"
+  },
+  {
+    "icon": ["fab", "github"],
+    "brandName": "Github"
+  },
+  {
+    "icon": ["fab", "gitlab"],
+    "brandName": "Gitlab"
+  },
+  {
+    "icon": ["fab", "hashnode"],
+    "brandName": "Hashnode"
+  },
+  {
+    "icon": ["fab", "linkedin"],
+    "brandName": "Linkedin"
+  },
+  {
+    "icon": ["fab", "stack-overflow"],
+    "brandName": "Stack Overflow"
+  },
+  {
+    "icon": ["fab", "twitch"],
+    "brandName": "Twitch"
+  },
+  {
+    "icon": ["fab", "twitter"],
+    "brandName": "Twitter"
+  },
+  {
+    "icon": ["fab", "youtube"],
+    "brandName": "YouTube"
+  }
+]

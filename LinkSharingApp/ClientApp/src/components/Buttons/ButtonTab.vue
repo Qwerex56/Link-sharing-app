@@ -7,7 +7,7 @@
       @click="emitClickEvent()">
     <label :for="props.uniqueId" 
       class="absolute flex flex-row gap-2 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 peer-checked:text-purple group-hover:text-purple">
-      <MultiIcon :icon-fa="props.btnIcon" />
+      <MultiIcon :icon-fa="['fas', 'link']" />
       <slot>
         Tab Name
       </slot>

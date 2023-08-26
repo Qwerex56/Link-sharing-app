@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <FontAwesomeIcon v-if="props.iconFa" :icon="props.iconFa" class="align-middle"></FontAwesomeIcon>
+    <FontAwesomeIcon v-if="props.iconFa" :icon="props.iconFa" class="align-middle" />
     <img v-else-if="props.iconImg" :src="props.iconImg" alt="icoI" class="align-middle">
     <img v-else :src="defIcon" alt="def" class="align-middle">
   </div>

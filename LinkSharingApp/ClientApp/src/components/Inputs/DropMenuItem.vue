@@ -1,7 +1,7 @@
 <template>
   <li class="flex flex-row w-full gap-3">
     <MultiIcon :icon-fa="props.itemLogo" class="self-center" />
-      <slot>Item name</slot>
+    <slot>Item name</slot>
   </li>
 </template>
 

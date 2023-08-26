@@ -22,6 +22,9 @@ export default {
       mobile: '375px',
       tablet: '768px',
       desktop: '1440px',
+    },
+    fontFamily: {
+      "instrument-sans" : ["'Instrument Sans'", "sans serif"],
     }
   },
   plugins: [],

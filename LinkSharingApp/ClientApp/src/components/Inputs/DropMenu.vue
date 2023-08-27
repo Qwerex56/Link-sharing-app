@@ -67,6 +67,10 @@ const sortBrands = (aItem: {
   return aItem.brandName.localeCompare(bItem.brandName);
 
   // TODO: Set active item to top
+
+  if (aItem.brandName === active.value?.brandName) {
+    return 0;
+  }
 }
 
 </script>

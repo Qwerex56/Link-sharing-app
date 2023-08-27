@@ -8,8 +8,7 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "prepare": "husky install"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",

@@ -5,7 +5,7 @@
       v-on-click-outside="closeList" 
       class="flex flex-row w-full gap-3">
       <div v-if="!active" class="flex flex-row gap-3 w-full">
-        <DropMenuItem>Select item from list</DropMenuItem>
+        <DropMenuItem>{{ $t('messeges.hello') }}</DropMenuItem>
       </div>
       <div v-else class="flex flex-row gap-3 w-full">
         <DropMenuItem :item-logo="active.icon">{{ active.brandName }}</DropMenuItem>

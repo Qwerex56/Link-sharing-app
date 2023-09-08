@@ -42,5 +42,17 @@
   {
     "icon": ["fab", "youtube"],
     "brandName": "YouTube"
+  },
+  {
+    "icon": "simple-icons:codewars",
+    "brandName": "Codewars"
+  },
+  {
+    "icon": "skill-icons:devto-light",
+    "brandName": "Dev.to"
+  },
+  {
+    "icon": "simple-icons:frontendmentor",
+    "brandName": "Frontend Mentor"
   }
 ]

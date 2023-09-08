@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
-    <FontAwesomeIcon v-if="props.iconFa" :icon="props.iconFa" class="align-middle" />
-    <Icon v-else-if="props.iconIfy" :icon="props.iconIfy"/>
+    <FontAwesomeIcon v-if="Array.isArray(icon)" :icon="(icon as string[])" class="align-middle" />
+    <Icon v-else-if="typeof(icon) == 'string'" :icon="(icon as any)" />
     <img v-else-if="props.iconImg" :src="props.iconImg" alt="icoI" class="align-middle">
     <img v-else :src="defIcon" alt="def" class="align-middle">
   </div>
@@ -11,21 +11,17 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { Icon } from '@iconify/vue';
 
+import { PropType } from 'vue';
+
+import IItemLogo from '@/modules/types/IItemLogo';
+
 const defIcon = 'src/assets/Icons/icon-link.svg';
 
 const props = defineProps({
-  iconFa: {
-    type: Array<string>,
-    required: false,
-  },
-  iconIfy: {
-    type: String,
-    require: false,
-  },
+  icon: Object as PropType<IItemLogo>,
   iconImg: {
     type: String,
     required: false,
   }
 });
-
 </script>

@@ -1,36 +1,53 @@
 <template>
-  <div class="group relative px-4 py-3 border rounded-lg border-borders hover:border-purple">
-    <div 
-      @click="dropdownVisible = !dropdownVisible" 
-      v-on-click-outside="closeList" 
-      class="flex flex-row w-full gap-3">
-      <div v-if="!active" class="flex flex-row gap-3 w-full">
+  <div
+    class="group relative rounded-lg border border-borders px-4 py-3 hover:border-purple"
+  >
+    <div
+      v-on-click-outside="closeList"
+      class="flex w-full flex-row gap-3"
+      @click="dropdownVisible = !dropdownVisible"
+    >
+      <div 
+        v-if="!active" 
+        class="flex w-full flex-row gap-3"
+      >
         <DropMenuItem>
-          <template #IconName>
-            Select item from list
+          <template #IconName> 
+            Select item from list 
           </template>
         </DropMenuItem>
       </div>
-      <div v-else class="flex flex-row gap-3 w-full">
+      <div 
+        v-else 
+        class="flex w-full flex-row gap-3"
+      >
         <DropMenuItem>
           <template #Icon>
-            <MultiIcon :icon="(active?.icon as unknown as IItemLogo)" />
+            <MultiIcon :icon="active?.icon as unknown as IItemLogo" />
           </template>
           <template #IconName>
             {{ active.brandName }}
           </template>
         </DropMenuItem>
       </div>
-      <MultiIcon :icon="(['fas', 'chevron-down'] as unknown as IItemLogo)" :class="dropdownVisible? '-scale-y-100' : 'scale-y-100'" />
+      <MultiIcon
+        :icon="['fas', 'chevron-down'] as unknown as IItemLogo"
+        :class="dropdownVisible ? '-scale-y-100' : 'scale-y-100'"
+      />
     </div>
-    <ul v-if="dropdownVisible" class="absolute w-full max-h-60 overflow-y-scroll border rounded-lg border-borders bg-white overflow-hidden left-0 top-[125%]">
-      <DropMenuItem v-for="(item, index) in brandsArr" :key="index"
-        @click="onLabelClick(item)"
-        class="flex flex-row mx-4 px-4 py-3 border-b border-borders last-of-type:border-[transparent]"
+    <ul
+      v-if="dropdownVisible"
+      class="absolute left-0 top-[125%] max-h-60 w-full overflow-hidden overflow-y-scroll rounded-lg border border-borders bg-white"
+    >
+      <DropMenuItem
+        v-for="(item, index) in brandsArr"
+        :key="index"
+        class="mx-4 flex flex-row border-b border-borders px-4 py-3 last-of-type:border-[transparent]"
         :class="active === item ? 'text-purple' : ''"
+        @click="onLabelClick(item)"
       >
         <template #Icon>
-          <MultiIcon :icon="(item?.icon as unknown as IItemLogo)" />
+          <MultiIcon :icon="item?.icon as unknown as IItemLogo" />
         </template>
         <template #IconName>
           {{ item.brandName }}
@@ -44,16 +61,16 @@
 </template>
 
 <script setup lang="ts">
-import DropMenuItem from './DropMenuItem.vue';
-import MultiIcon from '../utilities/MultiIcon.vue';
+import DropMenuItem from "./DropMenuItem.vue";
+import MultiIcon from "../utilities/MultiIcon.vue";
 
-import { ref } from 'vue';
-import { vOnClickOutside } from '@vueuse/components';
+import { ref } from "vue";
+import { vOnClickOutside } from "@vueuse/components";
 
-import brandDropdownMenu from '@/modules/dropdownMenuData/brandDropdownData.json';
+import brandDropdownMenu from "@/modules/dropdownMenuData/brandDropdownData.json";
 
-import IItemLogo from '@/modules/types/IItemLogo';
-import Icon from '@/modules/types/IconType';
+import IItemLogo from "@/modules/types/IItemLogo";
+import Icon from "@/modules/types/IconType";
 
 const brandsArr = ref(brandDropdownMenu);
 
@@ -62,9 +79,9 @@ const active = ref<Icon>(null);
 
 const closeList = () => {
   dropdownVisible.value = false;
-}
+};
 
 const onLabelClick = (item: Icon) => {
   active.value = item;
-}
+};
 </script>

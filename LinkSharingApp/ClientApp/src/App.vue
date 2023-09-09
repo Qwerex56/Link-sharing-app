@@ -19,19 +19,34 @@
       </p>
     </div>
   </div> -->
-  <ButtonTab :radio-group="'g'" :unique-id="'button'" @tab-click-ev="() => {}"></ButtonTab>
-  <ButtonTab :radio-group="'g'" :unique-id="'button'" @tab-click-ev="() => {}"></ButtonTab>
-  <ButtonTab :radio-group="'g'" :unique-id="'button'" @tab-click-ev="() => {}"></ButtonTab>
+  <ButtonTab
+    :radio-group="'g'"
+    :unique-id="'button'"
+    @tab-click-ev="() => {}"
+  />
+  <ButtonTab
+    :radio-group="'g'"
+    :unique-id="'button'"
+    @tab-click-ev="() => {}"
+  />
+  <ButtonTab
+    :radio-group="'g'"
+    :unique-id="'button'"
+    @tab-click-ev="() => {}"
+  />
 
-  <TextField></TextField>
+  <TextField />
 
-  <DropMenu></DropMenu>
+  <DropMenu />
+
+  <ImageUploader />
 </template>
 
 <script setup lang="ts">
-import ButtonTab from './components/Buttons/ButtonTab.vue';
-import TextField from './components/Inputs/TextField.vue';
-import DropMenu from './components/Inputs/DropMenu.vue';
+import ButtonTab from "./components/Buttons/ButtonTab.vue";
+import TextField from "./components/Inputs/TextField.vue";
+import DropMenu from "./components/Inputs/DropMenu.vue";
+import ImageUploader from "./components/Buttons/ImageUploader.vue";
 
 // import { ref } from "vue";
 
@@ -41,7 +56,7 @@ import DropMenu from './components/Inputs/DropMenu.vue';
 // const fetchData = async () => {
 //   let response = await fetch('lsa/Hello/GetHello/');
 //   resText.value = await response.text();
-  
+
 //   if (response.ok){
 //     calledFetch.value = true;
 //   }

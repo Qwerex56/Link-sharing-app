@@ -20,7 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
@@ -30,7 +29,8 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "src/**/*.stories.ts"
+    "src/**/*.stories.ts",
+    "src/**.*"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

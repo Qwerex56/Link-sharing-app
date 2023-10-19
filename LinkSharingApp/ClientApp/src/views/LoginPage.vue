@@ -8,16 +8,14 @@
       </template>
     </LabelCard>
     <div class="flex flex-col gap-6">
-      <TextField
-        input-type="email"
-        place-hldr="e.g. alex@email.com"
-        input-icon=""
-      >
+      <TextField input-type="email" place-hldr="e.g. alex@email.com">
         Not a valid email
       </TextField>
-      <TextField></TextField>
+      <TextField input-type="password" place-hldr="Enter your password">
+        Not a valid password
+      </TextField>
       <ButtonPrimary>Login</ButtonPrimary>
-      <LinkCard>
+      <LinkCard router-link="/Signup">
         <template #description> Don`t have an account? </template>
         <template #link> Create account? </template>
       </LinkCard>

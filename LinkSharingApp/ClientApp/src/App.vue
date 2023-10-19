@@ -1,7 +1,5 @@
 <template>
-  <LoginPage></LoginPage>
+  <RouterView> </RouterView>
 </template>
 
-<script setup lang="ts">
-import LoginPage from "./views/LoginPage.vue";
-</script>
+<script setup lang="ts"></script>

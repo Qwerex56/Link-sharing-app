@@ -9,11 +9,11 @@
       :placeholder="props.placeHldr"
       class="peer h-full w-full appearance-none rounded-lg border border-borders px-4 py-3 indent-[calc(2.75rem-1rem)] outline-none invalid:border-red focus:border-purple focus:shadow-purple"
       @submit="emitSubmitValidation()"
-    >
+    />
     <p
       class="absolute right-4 top-1/2 hidden -translate-y-1/2 text-xs text-red peer-invalid:inline-block"
     >
-      <span>Lorem, ipsum dolor.</span>
+      <slot>Lorem, ipsum dolor.</slot>
     </p>
   </div>
 </template>

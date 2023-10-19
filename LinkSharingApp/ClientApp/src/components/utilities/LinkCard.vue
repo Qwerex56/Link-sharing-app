@@ -5,8 +5,21 @@
     <p class="">
       <slot name="description"></slot>
     </p>
-    <a href="" class="text-purple hover:text-purple-hover"
-      ><slot name="link"></slot
-    ></a>
+    <router-link
+      :to="props.routerLink"
+      class="text-purple hover:text-purple-hover"
+    >
+      <slot name="link"></slot>
+    </router-link>
   </div>
 </template>
+
+<script setup lang="ts">
+const props = defineProps({
+  routerLink: {
+    type: String,
+    default: "/",
+    required: true,
+  },
+});
+</script>

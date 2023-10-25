@@ -1,14 +1,14 @@
 <template>
-  <a 
-    :href="props.siteLink" 
-    class="flex flex-row gap-2 rounded-lg p-4 align-middle text-white" 
+  <a
+    :href="props.siteLink"
+    class="flex flex-row gap-2 rounded-lg p-4 align-middle text-white"
     :class="props.bgColor"
   >
-    <img 
-      :src="props.linkLogo" 
-      alt="logo" 
+    <img
+      :src="props.linkLogo"
+      alt="logo"
       class="w-5"
-    >
+    />
     <slot> SiteName </slot>
     <FontAwesomeIcon :icon="['fas', 'arrow-right']" />
   </a>

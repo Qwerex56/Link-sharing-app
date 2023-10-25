@@ -10,7 +10,5 @@ module.exports = {
   plugins: ["prettier"],
   rules: {
     "vue/html-self-closing": "off",
-    // override/add rules settings here, such as:
-    // 'vue/no-unused-vars': 'error'
   },
 };

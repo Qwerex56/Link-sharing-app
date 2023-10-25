@@ -2,17 +2,25 @@
   <div class="flex h-full">
     <FontAwesomeIcon
       v-if="Array.isArray(icon)"
-      :icon="icon as string[]"
+      :icon="icon.logo as string[]"
       class="h-full align-middle"
     />
-    <Icon v-else-if="typeof icon == 'string'" :icon="icon as any" />
+    <Icon
+      v-else-if="icon != null"
+      :icon="icon as any"
+    />
     <img
       v-else-if="props.iconImg"
       :src="props.iconImg"
       alt="icoI"
       class="h-full align-middle"
     />
-    <img v-else :src="defIcon" alt="def" class="h-full align-middle" />
+    <img
+      v-else
+      :src="defIcon"
+      alt="def"
+      class="h-full align-middle"
+    />
   </div>
 </template>
 
@@ -29,12 +37,12 @@ const defIcon = "src/assets/Icons/icon-link.svg";
 const props = defineProps({
   icon: {
     type: Object as PropType<IItemLogo>,
-    default: " " as unknown as IItemLogo,
+    default: null as unknown as IItemLogo,
   },
   iconImg: {
     type: String,
     required: false,
-    default: "",
+    default: null,
   },
 });
 </script>

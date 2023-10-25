@@ -7,18 +7,18 @@
       class="flex w-full flex-row gap-3"
       @click="dropdownVisible = !dropdownVisible"
     >
-      <div 
-        v-if="!active" 
+      <div
+        v-if="!active"
         class="flex w-full flex-row gap-3"
       >
         <DropMenuItem>
-          <template #IconName> 
-            Select item from list 
+          <template #IconName>
+            Select item from list
           </template>
         </DropMenuItem>
       </div>
-      <div 
-        v-else 
+      <div
+        v-else
         class="flex w-full flex-row gap-3"
       >
         <DropMenuItem>
@@ -33,6 +33,7 @@
       <MultiIcon
         :icon="['fas', 'chevron-down'] as unknown as IItemLogo"
         :class="dropdownVisible ? '-scale-y-100' : 'scale-y-100'"
+        class=""
       />
     </div>
     <ul

@@ -1,23 +1,26 @@
 <template>
   <nav class="flex flex-row place-content-between px-6 py-4 items-center">
-    <MultiIcon :icon-img="LogoDevlinksSm" />
-    <div class="flex flex-row">
+    <MultiIcon
+      :icon-img="LogoDevlinksSm"
+    />
+    <div class="w-80 flex flex-row">
       <ButtonTab
         radio-group="tab"
         unique-id="linksEd"
-        :btn-icon="['fas', 'link']"
+        class="w-20"
       >
-        asdf
+        <MultiIcon :icon-img="LogoDevlinksSm" />
       </ButtonTab>
       <ButtonTab
         radio-group="tab"
         unique-id="account"
-        :btn-icon="['fas', 'link']"
-      />
+        class="w-20"
+      >
+        <MultiIcon :icon-img="LogoDevlinksSm" />
+      </ButtonTab>
     </div>
     <ButtonSecondary>
-      <MultiIcon :icon="{logo: ['far', 'eye']}">
-      </MultiIcon>
+      <MultiIcon :icon="(['far', 'eye'] as unknown as IItemLogo)" />
     </ButtonSecondary>
   </nav>
 </template>
@@ -28,4 +31,5 @@ import LogoDevlinksSm from "@/assets/Logos/logo-devlinks-small.svg";
 import MultiIcon from "@/components/utilities/MultiIcon.vue";
 import ButtonTab from "@/components/Buttons/ButtonTab.vue";
 import ButtonSecondary from "@/components/Buttons/ButtonSecondary.vue";
+import IItemLogo from "@/modules/types/IItemLogo";
 </script>

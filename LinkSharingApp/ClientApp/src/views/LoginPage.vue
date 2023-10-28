@@ -23,7 +23,7 @@
         Not a valid password
       </TextField>
       <ButtonPrimary
-        :on-submit-action="() => $router.push({ path: '/LinkCustomization' })"
+        @submit-action="goToLinkCustomization()"
       >
         Login
       </ButtonPrimary>
@@ -51,9 +51,9 @@ import LabelCard from "@/components/utilities/LabelCard.vue";
 
 import devlinksLogo from "@/assets/Logos/logo-devlinks-large.svg";
 
-// import router from "../../router";
+import router from "../../router";
 
-// const goToLinkCustomization = () => {
-//   router.push("/LinkCustomization");
-// }
+const goToLinkCustomization = () => {
+  router.push("/LinkCustomization");
+}
 </script>

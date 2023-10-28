@@ -13,16 +13,12 @@
       :for="props.uniqueId"
       class="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-row gap-2 group-hover:text-purple peer-checked:text-purple"
     >
-      <MultiIcon :icon="(btnIcon as unknown as IItemLogo)" />
       <slot> Tab Name </slot>
     </label>
   </div>
 </template>
 
 <script setup lang="ts">
-import MultiIcon from "../utilities/MultiIcon.vue";
-import IItemLogo from "@/modules/types/IItemLogo";
-
 const props = defineProps({
   radioGroup: {
     type: String,
@@ -31,11 +27,6 @@ const props = defineProps({
   uniqueId: {
     type: String,
     required: true,
-  },
-  btnIcon: {
-    type: Array<string>,
-    required: false,
-    default: [""],
   },
 });
 

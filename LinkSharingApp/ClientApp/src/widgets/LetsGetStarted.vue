@@ -1,7 +1,7 @@
 <template>
   <InnerPageContainer class="bg-gray-light flex flex-col items-center py-12">
     <MultiIcon
-      class="h-20"
+      class="w-32"
       :icon-img="IllustrationPhone"
     ></MultiIcon>
     <LabelCard class="text-center px-5">

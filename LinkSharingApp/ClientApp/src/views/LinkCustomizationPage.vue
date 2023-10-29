@@ -4,6 +4,7 @@
     <InnerPageContainer class="bg-white py-4">
       <AddNewLink></AddNewLink>
       <LetsGetStarted class="mx-5"></LetsGetStarted>
+      <LinkCustomizer class="mx-5"></LinkCustomizer>
       <div class="w-full h-[.0625rem] bg-gray-light"></div>
       <ButtonPrimary class="mx-4">
         Save
@@ -19,4 +20,5 @@ import InnerPageContainer from '@/components/utilities/InnerPageContainer.vue';
 import AddNewLink from '@/widgets/AddNewLink.vue';
 import LetsGetStarted from '@/widgets/LetsGetStarted.vue';
 import ButtonPrimary from '@/components/Buttons/ButtonPrimary.vue';
+import LinkCustomizer from '@/widgets/LinkCustomizer.vue';
 </script>

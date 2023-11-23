@@ -1,12 +1,5 @@
-type Icon =
-  | {
-      icon: string[];
-      brandName: string;
-    }
-  | {
-      icon: string;
+export type Icon = {
+      icon: string | null;
       brandName: string;
     }
   | null;
-
-export default Icon;

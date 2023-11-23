@@ -8,7 +8,9 @@
         Add/edit/remove links below and then share all your profiles with the world!
       </template>
     </LabelCard>
-    <ButtonSecondary>+ Add new link</ButtonSecondary>
+    <ButtonSecondary @submit-action="linkStore.appendLinks()">
+      + Add new link
+    </ButtonSecondary>
   </InnerPageContainer>
 </template>
 
@@ -16,4 +18,8 @@
 import LabelCard from '@/components/utilities/LabelCard.vue';
 import ButtonSecondary from '@/components/Buttons/ButtonSecondary.vue';
 import InnerPageContainer from '@/components/utilities/InnerPageContainer.vue';
+
+import useLinkStore from '@/stores/linkStore';
+
+const linkStore = useLinkStore();
 </script>

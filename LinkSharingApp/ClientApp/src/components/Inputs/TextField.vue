@@ -6,10 +6,11 @@
       </slot>
     </p>
     <input
+      v-model="value" 
       :type="props.inputType"
       :placeholder="props.placeHldr"
       class="peer h-full w-full appearance-none rounded-lg border border-borders px-4 py-3 indent-[calc(2.75rem-1rem)] outline-none invalid:border-red focus:border-purple focus:shadow-purple"
-      @submit="emitSubmitValidation()"
+      @input="foo(($event.target as HTMLInputElement).value)"
     />
     <MultiIcon
       :icon-fa="['fas', 'link']"
@@ -19,13 +20,16 @@
       class="absolute right-4 top-1/2 hidden -translate-y-1/2 text-xs text-red peer-invalid:inline-block"
     >
       <slot name="ErrorMsg">
-        Lorem, ipsum dolor.
+        {{ errorMessage }}
       </slot>
     </p>
   </div>
 </template>
 
 <script setup lang="ts">
+import { useField } from "vee-validate";
+import { toTypedSchema } from "@vee-validate/zod";
+import { z } from 'zod';
 import MultiIcon from "../utilities/MultiIcon.vue";
 
 const props = defineProps({
@@ -44,13 +48,22 @@ const props = defineProps({
     required: false,
     default: "src/assets/Icons/icon-link.svg",
   },
+  modelValue: {
+    type: String,
+    required: false,
+    default: null
+  }
 });
 
 const emit = defineEmits<{
-  (e: "SubmitValidation"): void;
+  (e: 'onChange', msg: string): void
 }>();
 
-const emitSubmitValidation = () => {
-  emit("SubmitValidation");
-};
+const { value, errorMessage } = useField(() => props.modelValue, toTypedSchema(z.string().url().min(1)), {
+  syncVModel: true,
+});
+
+const foo = (ev: string) => {
+  emit('onChange', ev);
+}
 </script>

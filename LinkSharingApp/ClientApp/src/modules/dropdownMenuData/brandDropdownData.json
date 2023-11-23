@@ -1,58 +1,62 @@
 [
   {
-    "icon": ["fab", "codepen"],
+    "icon": "src/assets/brands/icon-codepen.svg",
     "brandName": "Codepen"
   },
   {
-    "icon": ["fab", "facebook"],
+    "icon": "src/assets/brands/icon-facebook.svg",
     "brandName": "Facebook"
   },
   {
-    "icon": ["fab", "free-code-camp"],
+    "icon": "src/assets/brands/icon-freecodecamp.svg",
     "brandName": "FreeCodeCamp"
   },
   {
-    "icon": ["fab", "github"],
+    "icon": "src/assets/brands/icon-github.svg",
     "brandName": "Github"
   },
   {
-    "icon": ["fab", "gitlab"],
+    "icon": "src/assets/brands/icon-gitlab.svg",
     "brandName": "Gitlab"
   },
   {
-    "icon": ["fab", "hashnode"],
+    "icon": "src/assets/brands/icon-hashnode.svg",
     "brandName": "Hashnode"
   },
   {
-    "icon": ["fab", "linkedin"],
+    "icon": "src/assets/brands/icon-linkedin.svg",
     "brandName": "Linkedin"
   },
   {
-    "icon": ["fab", "stack-overflow"],
+    "icon": "src/assets/brands/icon-stack-overflow.svg",
     "brandName": "Stack Overflow"
   },
   {
-    "icon": ["fab", "twitch"],
+    "icon": "src/assets/brands/icon-twitch.svg",
     "brandName": "Twitch"
   },
   {
-    "icon": ["fab", "twitter"],
+    "icon": "src/assets/brands/icon-twitter.svg",
     "brandName": "Twitter"
   },
   {
-    "icon": ["fab", "youtube"],
+    "icon": "src/assets/brands/icon-youtube.svg",
     "brandName": "YouTube"
   },
   {
-    "icon": "simple-icons:codewars",
+    "icon": "src/assets/brands/icon-codewars.svg",
     "brandName": "Codewars"
   },
   {
-    "icon": "skill-icons:devto-light",
+    "icon": "src/assets/brands/icon-devto.svg",
     "brandName": "Dev.to"
   },
   {
-    "icon": "simple-icons:frontendmentor",
+    "icon": "src/assets/brands/icon-frontend-mentor.svg",
     "brandName": "Frontend Mentor"
+  },
+  {
+    "icon": "",
+    "brandName": "Other"
   }
 ]

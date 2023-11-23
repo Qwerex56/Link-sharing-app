@@ -1,0 +1,1 @@
+export const MAX_LINK_COUNT = 32;

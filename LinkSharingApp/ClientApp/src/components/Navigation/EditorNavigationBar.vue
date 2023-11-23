@@ -8,6 +8,7 @@
         radio-group="tab"
         unique-id="linksEd"
         class="w-20"
+        @tab-click-ev="() => $router.push('/LinkCustomization')"
       >
         <MultiIcon :icon-img="LogoDevlinksSm" />
       </ButtonTab>
@@ -15,12 +16,13 @@
         radio-group="tab"
         unique-id="account"
         class="w-20"
+        @tab-click-ev="() => $router.push('/ProfileDetails')"
       >
         <MultiIcon :icon-img="LogoDevlinksSm" />
       </ButtonTab>
     </div>
     <ButtonSecondary>
-      <MultiIcon :icon="(['far', 'eye'] as unknown as IItemLogo)" />
+      <MultiIcon :icon-img="LogoDevlinksSm" />
     </ButtonSecondary>
   </nav>
 </template>
@@ -31,5 +33,4 @@ import LogoDevlinksSm from "@/assets/Logos/logo-devlinks-small.svg";
 import MultiIcon from "@/components/utilities/MultiIcon.vue";
 import ButtonTab from "@/components/Buttons/ButtonTab.vue";
 import ButtonSecondary from "@/components/Buttons/ButtonSecondary.vue";
-import IItemLogo from "@/modules/types/IItemLogo";
 </script>

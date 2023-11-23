@@ -23,32 +23,32 @@
       >
         <DropMenuItem>
           <template #Icon>
-            <MultiIcon :icon="active?.icon as unknown as IItemLogo" />
+            <MultiIcon :icon="active" />
           </template>
           <template #IconName>
-            {{ active.brandName }}
+            {{ initActive?.brandName?? active?.brandName }}
           </template>
         </DropMenuItem>
       </div>
       <MultiIcon
-        :icon="['fas', 'chevron-down'] as unknown as IItemLogo"
+        :icon="(['fas', 'chevron-down'] as unknown as Icon)"
         :class="dropdownVisible ? '-scale-y-100' : 'scale-y-100'"
         class=""
       />
     </div>
     <ul
       v-if="dropdownVisible"
-      class="absolute left-0 top-[125%] max-h-60 w-full overflow-hidden overflow-y-scroll rounded-lg border border-borders bg-white"
+      class="absolute z-10 left-0 top-[125%] max-h-60 w-full overflow-hidden overflow-y-scroll rounded-lg border border-borders bg-white"
     >
       <DropMenuItem
         v-for="(item, index) in brandsArr"
         :key="index"
         class="mx-4 flex flex-row border-b border-borders px-4 py-3 last-of-type:border-[transparent]"
         :class="active === item ? 'text-purple' : ''"
-        @click="onLabelClick(item)"
+        @click="emitSiteChange(item)"
       >
         <template #Icon>
-          <MultiIcon :icon="item?.icon as unknown as IItemLogo" />
+          <MultiIcon :icon="(item)" />
         </template>
         <template #IconName>
           {{ item.brandName }}
@@ -65,24 +65,37 @@
 import DropMenuItem from "./DropMenuItem.vue";
 import MultiIcon from "../utilities/MultiIcon.vue";
 
-import { ref } from "vue";
+import { PropType, ref } from "vue";
 import { vOnClickOutside } from "@vueuse/components";
 
 import brandDropdownMenu from "@/modules/dropdownMenuData/brandDropdownData.json";
 
-import IItemLogo from "@/modules/types/IItemLogo";
-import Icon from "@/modules/types/IconType";
+import { Icon } from "@/modules/types/IconType";
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+defineProps({
+  initActive: {
+    type: Object as PropType<Icon>,
+    required: false,
+    default: null,
+  }
+});
 
 const brandsArr = ref(brandDropdownMenu);
 
 const dropdownVisible = ref(false);
 const active = ref<Icon>(null);
 
+const emit = defineEmits<{
+  (e: 'onSiteChange', site: Icon): void;
+}>();
+
 const closeList = () => {
   dropdownVisible.value = false;
 };
 
-const onLabelClick = (item: Icon) => {
+const emitSiteChange = (item: Icon) => {
   active.value = item;
-};
+  emit('onSiteChange', item);
+}
 </script>

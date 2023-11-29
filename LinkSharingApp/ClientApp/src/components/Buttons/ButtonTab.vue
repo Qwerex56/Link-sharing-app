@@ -6,7 +6,8 @@
       :id="props.uniqueId"
       type="radio"
       :name="props.radioGroup"
-      class="peer h-[2.875rem] w-full appearance-none bg-[transparent] checked:bg-purple-hover"
+      :checked="active"
+      class="peer hover:cursor-pointer h-[2.875rem] w-full appearance-none bg-[transparent] checked:bg-purple-hover"
       @click="emitClickEvent()"
     />
     <label
@@ -28,6 +29,10 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  active: {
+    type: Boolean,
+    default: false,
+  }
 });
 
 const emits = defineEmits<{

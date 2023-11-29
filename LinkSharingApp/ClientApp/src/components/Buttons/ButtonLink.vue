@@ -10,12 +10,12 @@
       class="w-5"
     />
     <slot> SiteName </slot>
-    <FontAwesomeIcon :icon="['fas', 'arrow-right']" />
+    <MultiIcon :icon-img="linkLogo" />
   </a>
 </template>
 
 <script setup lang="ts">
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import MultiIcon from '../utilities/MultiIcon.vue';
 
 const props = defineProps({
   siteLink: {

@@ -1,11 +1,11 @@
-import LinkType from "@/modules/types/LinkType";
+import Link from "@/modules/types/LinkType";
 import { get, set } from "@vueuse/core";
 import { defineStore } from "pinia";
 import { computed } from "vue";
 import { ref, Ref } from "vue";
 
 const useLinkStore = defineStore("linkStore", () => {
-  const links: Ref<LinkType[]> = ref([]);
+  const links: Ref<Link[]> = ref([]);
 
   // Creates empty link
   const appendLinks = () => {
@@ -23,13 +23,13 @@ const useLinkStore = defineStore("linkStore", () => {
 
     links.value.push({
       linkId: increment(),
-      siteUrl: 'some link',
+      siteUrl: '',
       site: ''
     });
   }
 
   // Sets links
-  const setLinks = (newLinks: LinkType[]): void => {
+  const setLinks = (newLinks: Link[]): void => {
     set(links, newLinks);
   }
 
@@ -38,7 +38,7 @@ const useLinkStore = defineStore("linkStore", () => {
     links.value = links.value.filter(link => link.linkId !== id);
   }
 
-  function setLinkUrl (url: string, linkId: number) {
+  const setLinkUrl = (url: string, linkId: number) => {
     get(links)[linkId].siteUrl = url;
   }
 
@@ -49,7 +49,7 @@ const useLinkStore = defineStore("linkStore", () => {
     setLinks,
     removeLink, 
     setLinkUrl,
-    getLinks
+    getLinks,
   }
 });
 

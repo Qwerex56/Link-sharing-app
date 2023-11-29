@@ -31,9 +31,8 @@
         </DropMenuItem>
       </div>
       <MultiIcon
-        :icon="(['fas', 'chevron-down'] as unknown as Icon)"
+        :icon-img="chevronIco"
         :class="dropdownVisible ? '-scale-y-100' : 'scale-y-100'"
-        class=""
       />
     </div>
     <ul
@@ -48,7 +47,10 @@
         @click="emitSiteChange(item)"
       >
         <template #Icon>
-          <MultiIcon :icon="(item)" />
+          <MultiIcon 
+            class="hue-rotate-90"
+            :icon="(item)"
+          />
         </template>
         <template #IconName>
           {{ item.brandName }}
@@ -72,7 +74,8 @@ import brandDropdownMenu from "@/modules/dropdownMenuData/brandDropdownData.json
 
 import { Icon } from "@/modules/types/IconType";
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import chevronIco from '@/assets/Icons/icon-chevron-down.svg';
+
 defineProps({
   initActive: {
     type: Object as PropType<Icon>,
@@ -96,6 +99,7 @@ const closeList = () => {
 
 const emitSiteChange = (item: Icon) => {
   active.value = item;
+  closeList();
   emit('onSiteChange', item);
 }
 </script>

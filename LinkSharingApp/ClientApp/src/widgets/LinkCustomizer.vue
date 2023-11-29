@@ -20,13 +20,14 @@
       </p>
       <DropMenu
         :init-active="actIcon"
-        @on-site-change="foo($event)"
+        @on-site-change="setIcon($event)"
       />
     </div>
     <TextField
       v-model="linkRef"
       place-hldr="e.g. https://www.github.com/johnappleseed"
       input-type="url"
+      :validation-schema="urlValidatorSchema"
       @on-change="ev => linkStore.setLinkUrl(ev as string, linkInfo.linkId)"
     >
       <template #TextFieldType>
@@ -51,6 +52,8 @@ import { get } from '@vueuse/core';
 
 import LinkType from '@/modules/types/LinkType';
 import { Icon } from '@/modules/types/IconType';
+import { toTypedSchema } from '@vee-validate/zod';
+import { z } from 'zod';
 
 const props = defineProps({
   linkInfo: {
@@ -67,8 +70,10 @@ const linkStore = useLinkStore();
 const linkRef = ref(props.linkInfo.siteUrl);
 const actIcon: Ref<Icon> = ref(null);
 
-const foo = (x: Icon) => {
-  actIcon.value = x;
+const setIcon = (icon: Icon) => {
+  actIcon.value = icon;
   linkStore.getLinks[props.linkInfo.linkId].site = get(actIcon)?.brandName as string;
 }
+
+const urlValidatorSchema = toTypedSchema(z.string().url());
 </script>
